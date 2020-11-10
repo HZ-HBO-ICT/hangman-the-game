@@ -72,8 +72,11 @@ class Game {
     }
 
     /**
-     * @internal Arrow method that catches keyup events
-     * WARNING: DO NOT USE OR REMOVE THIS METHOD
+     * @internal Arrow method that catches keyPress events
+     * 
+     * WARNING: THIS MUST BE AN ARROW METHOD IN ORDER TO MAINTAIN THE CORRECT
+     * SCOPE OF THE 'THIS' VARIABLE. DO NOT CHANGE THE METHOD SIGNATURE OR 
+     * REMOVE THIS METHOD!
      */
     private keyPress = (ev: KeyboardEvent) => {
         // TODO handle key pressed events
